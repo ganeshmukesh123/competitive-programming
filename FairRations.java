@@ -1,3 +1,4 @@
+//problem statement https://www.hackerrank.com/challenges/fair-rations
 import java.io.*;
 import java.util.*;
 import java.text.*;
