@@ -16,6 +16,7 @@ public class FairRations {
             B[B_i] = in.nextInt();
             sum=sum+B[B_i];
         }
+        //if sum is even than it is not possible to distribute even number of bread
         if(sum%2!=0){
             System.out.println("NO");
         }
