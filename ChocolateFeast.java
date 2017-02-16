@@ -13,6 +13,8 @@ public class ChocolateFeast {
             n=sc.nextInt();
             c=sc.nextInt();
             m=sc.nextInt();
+            //ch count total number of chocolate
+            //wr count wrapper
             int ch,wr;
             ch=n/c;
             wr=ch;
