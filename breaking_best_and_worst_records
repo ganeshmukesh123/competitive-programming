@@ -1,0 +1,39 @@
+//problem statement https://www.hackerrank.com/challenges/breaking-best-and-worst-records
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class breaking_best_and_worst_records {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] score = new int[n];
+        for(int score_i=0; score_i < n; score_i++){
+            score[score_i] = in.nextInt();
+            
+        }
+        // your code goes here
+        int max,min;
+        max=score[0];
+        min=score[0];
+        int noBestScoreIn=0;
+        int noWorstScoreDe=0;
+        for(int i=1;i<n;i++){
+            if(max<score[i]){
+                noBestScoreIn++;
+                max=score[i];
+            }
+            
+            if(min>score[i]){
+                noWorstScoreDe++;
+                min=score[i];
+            }
+        }
+        System.out.println(noBestScoreIn+" "+noWorstScoreDe);
+    
+    }
+    
+}
