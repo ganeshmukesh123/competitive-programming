@@ -16,6 +16,8 @@ public class HandShake {
             for(int i=1;i<N;i++){
                 countHandShake+=i;
             }
+            //or
+            //countHandSkae=N*(N-1)/2;
             System.out.println(countHandShake);
         }
     }
